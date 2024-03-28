@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LayoutPage.master.cs" Inherits="LayoutPage" %>
+
+<%@ Register Src="~/UserControl/LoadingUI.ascx" TagPrefix="uc1" TagName="LoadingUI" %>
+<%@ Register Src="~/UserControl/VersionFooter.ascx" TagName="VersionFooter" TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+    <title>Trang chủ | Website Support</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8; IE=EmulateIE9" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Trang chủ | Website Support" />
+
+
+    <script src="<%=ResolveUrl("~/Scripts/lib/jquery/jquery.js")%>"></script>
+    <link href="<%=ResolveUrl("~/Scripts/lib/jquery-ui/jquery-ui.css")%>" rel="stylesheet" />
+    <script src="<%=ResolveUrl("~/Scripts/lib/jquery-ui/jquery-ui.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/lib/angular.min.js")%>"></script>
+    <script src="<%=ResolveUrl("~/Scripts/lib/slick-1.8.1/slick.js")%>"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        ::-webkit-scrollbar-thumb {
+            background-color: brown
+        }
+
+        body {
+            font-family: Verdana
+        }
+    </style>
+
+    <link href="<%=ResolveUrl("~/App_Themes/uluru-data-html/dist/assets/themes/app8a54.css?ver=1.0.0.0")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/App_Themes/uluru-data-html/dist/assets/themes/style8a54.css?ver=1.0.0.0")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/App_Themes/uluru-data-html/dist/assets/fontawesome-free-5.15.1-web/css/all.min.css?ver=1.0.0.0")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/Scripts/lib/slick-1.8.1/slick.css?ver=1.0.0.0")%>" rel="stylesheet" />
+    <link href="<%=ResolveUrl("~/Scripts/lib/slick-1.8.1/slick-theme.css?ver=1.0.0.0")%>" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="pageMaster" runat="server">
+        <div>
+            <header class="l-header">
+                <div class="l-header__content" data-ng-app="app">
+                    <h1 class="l-header__heading"></h1>
+                    <div class="l-header__other"></div>
+                </div>
+
+                <nav class="l-header__nav">
+                    <div class="l-header__item">
+                        <a class="l-header__link" href="index">Trang chủ</a>
+                    </div>
+
+                    <div class="l-header__item">
+                        <a class="l-header__link" href="#">Xem nhật ký Batch</a>
+                    </div>
+
+                    <div class="l-header__item">
+                        <a class="l-header__link" href="#">Thông số cài đặt</a>
+                    </div>
+
+                    <div class="l-header__item">
+                        <a class="l-header__link" href="#">Wiki</a>
+                    </div>
+                </nav>
+            </header>
+
+            <main class="l-main">
+                <div id="container" class="body-page">
+                    <asp:ContentPlaceHolder ID="ContentPlaceBody" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </main>
+
+            <footer class="l-footer">
+                <uc1:VersionFooter ID="ContentPlaceHolderFoot" runat="server" />
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceBodyFooter" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </footer>
+        </div>
+        <uc1:LoadingUI runat="server" ID="LoadingUI" />
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true"></asp:ScriptManager>
+        <link href="<%=ResolveUrl("~/App_Themes/responsive/responsive.css?ver=1.0.0.1")%>" rel="stylesheet" />
+        <script src="<%=ResolveUrl("~/Scripts/responsive.js?ver=1.0.0.0")%>"></script>
+    </form>
+</body>
+</html>

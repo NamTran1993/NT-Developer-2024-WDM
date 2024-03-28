@@ -1,0 +1,284 @@
+﻿.l-offer {
+    margin-top: 70px;
+}
+
+.c-main-visual-one .c-main-visual-one__slider .c-main-visual-one__image .bg-img {
+    max-width: 100%;
+}
+
+.menu {
+    color: #5d5757;
+    background: #fff;
+    width: 100%;
+    display: none;
+    font-family: verdana;
+    transition: 0.5s;
+}
+
+    .menu ul > li {
+        border-bottom: 1px solid #e9dfdf;
+        font-size: 15px;
+        padding: 10px;
+        text-decoration: none;
+        color: #112337;
+        font-weight: bold;
+        transition: 0.3s;
+        text-transform: uppercase;
+    }
+
+        .menu ul > li >label{
+            text-transform: uppercase;
+        }
+
+        .menu ul > li:active {
+        }
+
+#submenu > li > a {
+    font-size: 11.5px;
+    text-transform: lowercase;
+}
+
+
+.is-open {
+    display: block;
+}
+
+.is-close {
+    display: none;
+}
+
+.submenu-hide {
+    display: none;
+}
+
+.submenu-open {
+    display: block;
+}
+
+
+@media (max-width:768px) { /*   mobiles */
+    .program .row .large-4 {
+        width: 75%;
+    }
+
+    .framework .row .large-4 {
+        width: 57%;
+    }
+
+    .c-block-solution {
+        margin-top: 5px !important;
+    }
+
+    .div-framework {
+        margin-top: 20px !important;
+    }
+
+
+    .c-block-solution {
+        margin-top: 5px !important;
+    }
+
+    .div-framework {
+        margin-top: 20px !important;
+    }
+
+    .div-hw {
+        margin-top: 100px !important;
+    }
+
+    .div-flp {
+        margin-top: 0px !important;
+    }
+
+    .menu {
+        position: absolute;
+        left: 0px;
+        top: 66px;
+        z-index: 1000;
+        height: 1000px;
+    }
+
+        .menu ul > li {
+            padding: 12px;
+            color: #112337;
+        }
+
+            .menu ul > li > a {
+                color: #112337;
+                font-weight: bold;
+            }
+
+    .c-block-solution__float {
+        display: none;
+    }
+
+    .c-block-slip-first__block {
+        display: none;
+    }
+
+    .c-block-solution .l-container .large-6 {
+        width: 94%;
+    }
+
+    .c-block-solution__image_frame .div-content {
+        top: 18px;
+        font-size: 12.5pt;
+    }
+
+    .communication .row .arm-mbed {
+        left: 50px !important;
+    }
+
+    .communication .row .home-assistant {
+        right: 0px !important;
+    }
+
+    .communication .row .esp-home {
+        top: 63px !important;
+        left: -153px !important;
+    }
+
+    .communication .row .openHAB {
+        top: 79px !important;
+        left: 40px !important;
+    }
+
+    .communication .row .thing-speak {
+        top: 109px !important;
+        left: 45px !important;
+    }
+
+    .bg-espressif {
+        top: -6px !important;
+        left: 40px !important;
+    }
+
+    .bg-stm32 {
+        top: -50px !important;
+        left: 40px !important;
+    }
+
+    .bg-series {
+        top: -40px !important;
+        left: 40px !important;
+    }
+
+    .bg-sensor {
+        top: -24px !important;
+        left: 40px !important;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991px) {
+    .program .row .large-4 {
+        width: 75%;
+    }
+
+    .framework .row .large-4 {
+        width: 57%;
+    }
+
+    .c-block-solution {
+        margin-top: 5px !important;
+    }
+
+    .div-framework {
+        margin-top: 20px !important;
+    }
+
+
+    .c-block-solution {
+        margin-top: 5px !important;
+    }
+
+    .div-framework {
+        margin-top: 20px !important;
+    }
+
+    .div-hw {
+        margin-top: 0px !important;
+    }
+
+    .div-flp {
+        margin-top: 0px !important;
+    }
+
+    .menu {
+        position: absolute;
+        left: 0px;
+        top: 66px;
+        z-index: 1000;
+        height: 1000px;
+    }
+
+        .menu ul > li {
+            padding: 12px;
+            color: #112337;
+        }
+
+            .menu ul > li > a {
+                color: #112337;
+                font-weight: bold;
+            }
+
+    .c-block-solution__image_frame .div-content {
+        top: 18px;
+        font-size: 12.5pt;
+    }
+
+    .communication .row .large-4 {
+        width: 50%
+    }
+
+    .communication .row .arm-mbed {
+        left: -30px !important;
+    }
+
+    .communication .row .home-assistant {
+        left: -63px;
+        top: -12px;
+    }
+
+    .communication .row .esp-home {
+        top: 84px !important;
+        left: -13px !important;
+    }
+
+    .communication .row .openHAB {
+        top: 145px !important;
+        left: 0px !important;
+    }
+
+    .communication .row .thing-speak {
+        top: 192px !important;
+        left: 12px !important;
+    }
+
+    .bg-espressif {
+        top: -13px !important;
+        left: 40px !important;
+    }
+
+    .bg-stm32 {
+        top: -50px !important;
+        left: -85px !important;
+    }
+
+    .bg-series {
+        top: -50px !important;
+        left: -12px !important;
+        height: 78px !important;
+        width: 200px !important;
+    }
+
+    .bg-sensor {
+        top: -24px !important;
+        left: 40px !important;
+    }
+
+    .l-section.is-xxxxlg {
+        padding-top: 0rem;
+        padding-bottom: 7.5rem;
+    }
+}
